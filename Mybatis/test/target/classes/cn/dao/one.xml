@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.dao.one">
+
+    <cache />
+
+
+<select id="sele" resultType="news">
+
+       SELECT * FROM news1 LIMIT #{a},#{b}
+
+
+</select>
+
+    <select id="zz" resultType="int">
+
+        SELECT COUNT(*) FROM news1
+
+
+    </select>
+
+    <select id="ta" resultType="talk">
+
+          SELECT talktme,content FROM `talk` WHERE nid=#{nid}
+
+    </select>
+
+
+    <select id="ne" resultType="news">
+
+        select * from news1 where newsid=#{newsid}
+
+    </select>
+
+
+<update id="up">
+
+        update `news1` set clickCount= clickCount+1 where newsid=#{newsid}
+</update>
+
+    <insert id="inser">
+
+        INSERT INTO talk (content,talktme,nid) VALUES (#{content},#{talktme},#{nid})
+
+    </insert>
+
+    <select id="ff" resultType="int">
+
+        SELECT COUNT(*) FROM `talk` WHERE nid=#{nid}
+
+    </select>
+
+
+
+
+</mapper>

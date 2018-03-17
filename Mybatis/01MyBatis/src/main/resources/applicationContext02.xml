@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/context
+          http://www.springframework.org/schema/beans/conetxt.xsd
+       http://www.springframework.org/schema/aop/spring-aop.xsd
+
+">
+
+
+    <context:component-scan base-package="cn.autowired"></context:component-scan>
+
+    <bean id="hello" class="cn.study.dao.impl.HelloServiceimpl"></bean>
+
+    <bean id="service" class="cn.study.serviers.impl.helloserviceimpl">
+
+        <property name="he" ref="hello"></property>
+
+    </bean>
+
+    <bean id="first" class="cn.study.aop.fristaop"></bean>
+
+    <bean id="last" class="cn.study.aop.lasraop"></bean>
+
+    <aop:config>
+        <aop:pointcut id="myPoint" expression="execution(* * ..serviers.*.*(..))"></aop:pointcut>
+        <aop:advisor advice-ref="last" pointcut-ref="myPoint"></aop:advisor>
+        <aop:advisor advice-ref="first" pointcut-ref="myPoint"></aop:advisor>
+    </aop:config>
+
+
+    <bean id="stu" class="cn.study.dao.Student" scope="prototype">
+
+        <constructor-arg index="0" value="x某"></constructor-arg>
+
+        <constructor-arg index="1" value="18"></constructor-arg>
+    </bean>
+
+    <bean id="su" class="cn.study.dao.Student" p:name="赖维吉" p:age="18"></bean>
+
+    <bean id="ms" class="cn.study.entity.Collcation">
+
+        <property name="array">
+
+            <array>
+                <value>哈哈1</value>
+                <value>哈哈2</value>
+                <value>哈哈3</value>
+
+            </array>
+
+        </property>
+        <property name="list">
+            <list>
+
+                <value>A先生</value>
+                <value>B先生</value>
+                <value>C先生</value>
+            </list>
+
+        </property>
+
+        <property name="set">
+            <set>
+                <value>老板</value>
+                <value>总裁</value>
+                <value>董事长</value>
+
+            </set>
+
+        </property>
+
+        <property name="map">
+            <map>
+                <entry key="a111">
+                    <value>风景</value>
+                </entry>
+                <entry key="a222">
+                    <value>山河</value>
+                </entry>
+                <entry key="a333">
+                    <value>江河</value>
+                </entry>
+            </map>
+        </property>
+
+
+
+        <property name="properties">
+            <props>
+                <prop key="a1">11</prop>
+                <prop key="a2">22</prop>
+                <prop key="a3">33</prop>
+            </props>
+
+        </property>
+    </bean>
+
+    <bean id="st" class="cn.autowired.entity.Student">
+        <property name="name" value="啦啦"></property>
+    </bean>
+
+    <bean id="car" class="cn.autowired.entity.Car" autowire="byName">
+        <property name="name" value="aa"></property>
+        <property name="age" value="20"></property>
+     </bean>
+
+
+</beans>

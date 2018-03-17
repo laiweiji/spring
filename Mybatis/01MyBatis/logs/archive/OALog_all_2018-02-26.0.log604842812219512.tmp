@@ -1,0 +1,307 @@
+2018-02-24 09:54:18.978 DEBUG [main]cn.study.cn.study.dao.IBookdao.inser.debug:145 -==>  Preparing: INSERT INTO book (bookName,bookAuthor,bookPrice) VALUES (?,?,?)
+2018-02-24 09:54:19.001 DEBUG [main]cn.study.cn.study.dao.IBookdao.inser.debug:145 -==> Parameters: 未来以来(String), 马云(String), 100(Integer)
+2018-02-24 09:54:19.002 DEBUG [main]cn.study.cn.study.dao.IBookdao.inser.debug:145 -<==    Updates: 1
+2018-02-24 11:12:50.844 DEBUG [main]cn.study.cn.study.dao.IBookdao.books.debug:145 -==>  Preparing: select * from book
+2018-02-24 11:12:50.869 DEBUG [main]cn.study.cn.study.dao.IBookdao.books.debug:145 -==> Parameters:
+2018-02-24 11:12:50.900 DEBUG [main]cn.study.cn.study.dao.IBookdao.books.debug:145 -<==      Total: 8
+2018-02-24 11:13:43.174 DEBUG [main]cn.study.cn.study.dao.IBookdao.books.debug:145 -==>  Preparing: select bookName,bookAuthor,bookPrice from book
+2018-02-24 11:13:43.202 DEBUG [main]cn.study.cn.study.dao.IBookdao.books.debug:145 -==> Parameters:
+2018-02-24 11:13:43.233 DEBUG [main]cn.study.cn.study.dao.IBookdao.books.debug:145 -<==      Total: 8
+2018-02-24 11:14:53.751 DEBUG [main]cn.study.cn.study.dao.IBookdao.books.debug:145 -==>  Preparing: select bookName,bookAuthor,bookPrice from book
+2018-02-24 11:14:53.773 DEBUG [main]cn.study.cn.study.dao.IBookdao.books.debug:145 -==> Parameters:
+2018-02-24 11:14:53.797 DEBUG [main]cn.study.cn.study.dao.IBookdao.books.debug:145 -<==      Total: 8
+2018-02-24 11:26:25.008 DEBUG [main]cn.study.cn.study.dao.IBookdao.books.debug:145 -==>  Preparing: select bookName,bookAuthor,bookPrice from book WHERE bookName LIKE ?
+2018-02-24 11:26:25.064 DEBUG [main]cn.study.cn.study.dao.IBookdao.books.debug:145 -==> Parameters: 来(String)
+2018-02-24 11:26:25.073 DEBUG [main]cn.study.cn.study.dao.IBookdao.books.debug:145 -<==      Total: 0
+2018-02-24 11:27:29.031 DEBUG [main]cn.study.cn.study.dao.IBookdao.books.debug:145 -==>  Preparing: select bookName,bookAuthor,bookPrice from book WHERE bookName LIKE ?
+2018-02-24 11:27:29.110 DEBUG [main]cn.study.cn.study.dao.IBookdao.books.debug:145 -==> Parameters: 来(String)
+2018-02-24 11:27:29.127 DEBUG [main]cn.study.cn.study.dao.IBookdao.books.debug:145 -<==      Total: 0
+2018-02-24 11:28:48.209 DEBUG [main]cn.study.cn.study.dao.IBookdao.books.debug:145 -==>  Preparing: select bookName,bookAuthor,bookPrice from book WHERE bookName LIKE '%' ? '%'
+2018-02-24 11:28:48.247 DEBUG [main]cn.study.cn.study.dao.IBookdao.books.debug:145 -==> Parameters: 来(String)
+2018-02-24 11:28:48.273 DEBUG [main]cn.study.cn.study.dao.IBookdao.books.debug:145 -<==      Total: 7
+2018-02-24 14:35:04.803 DEBUG [main]cn.study.cn.study.dao.IBookdao.books.debug:145 -==>  Preparing: select bookName,bookAuthor,bookPrice from book WHERE bookName LIKE '%' ? '%'
+2018-02-24 14:35:04.849 DEBUG [main]cn.study.cn.study.dao.IBookdao.books.debug:145 -==> Parameters: 来(String)
+2018-02-24 14:35:04.889 DEBUG [main]cn.study.cn.study.dao.IBookdao.books.debug:145 -<==      Total: 7
+2018-02-24 14:35:04.919 DEBUG [main]cn.study.cn.study.dao.IBookdao.inser.debug:145 -==>  Preparing: INSERT INTO book (bookName,bookAuthor,bookPrice) VALUES (?,?,?)
+2018-02-24 14:35:04.920 DEBUG [main]cn.study.cn.study.dao.IBookdao.inser.debug:145 -==> Parameters: 未来以来(String), 马云(String), 100(Integer)
+2018-02-24 14:35:04.922 DEBUG [main]cn.study.cn.study.dao.IBookdao.inser.debug:145 -<==    Updates: 1
+2018-02-24 14:35:04.950 DEBUG [main]cn.study.cn.study.dao.IBookdao.up.debug:145 -==>  Preparing: UPDATE book set bookName=?,bookAuthor=?,bookPrice=? WHERE bookId=?
+2018-02-24 14:35:04.951 DEBUG [main]cn.study.cn.study.dao.IBookdao.up.debug:145 -==> Parameters: 未来以来(String), 马云(String), 100(Integer), 2(Integer)
+2018-02-24 14:35:04.952 DEBUG [main]cn.study.cn.study.dao.IBookdao.up.debug:145 -<==    Updates: 1
+2018-02-24 14:35:04.982 DEBUG [main]cn.study.cn.study.dao.IBookdao.del.debug:145 -==>  Preparing: DELETE FROM book WHERE bookId=?
+2018-02-24 14:35:05.010 DEBUG [main]cn.study.cn.study.dao.IBookdao.del.debug:145 -==> Parameters: 1(Integer)
+2018-02-24 14:35:05.011 DEBUG [main]cn.study.cn.study.dao.IBookdao.del.debug:145 -<==    Updates: 0
+2018-02-24 14:35:25.695 DEBUG [main]cn.study.cn.study.dao.IBookdao.books.debug:145 -==>  Preparing: select bookName,bookAuthor,bookPrice from book WHERE bookName LIKE '%' ? '%'
+2018-02-24 14:35:25.728 DEBUG [main]cn.study.cn.study.dao.IBookdao.books.debug:145 -==> Parameters: 来(String)
+2018-02-24 14:35:25.761 DEBUG [main]cn.study.cn.study.dao.IBookdao.books.debug:145 -<==      Total: 8
+2018-02-24 14:35:25.822 DEBUG [main]cn.study.cn.study.dao.IBookdao.del.debug:145 -==>  Preparing: DELETE FROM book WHERE bookId=?
+2018-02-24 14:35:25.823 DEBUG [main]cn.study.cn.study.dao.IBookdao.del.debug:145 -==> Parameters: 1(Integer)
+2018-02-24 14:35:25.824 DEBUG [main]cn.study.cn.study.dao.IBookdao.del.debug:145 -<==    Updates: 0
+2018-02-24 14:35:25.862 DEBUG [main]cn.study.cn.study.dao.IBookdao.up.debug:145 -==>  Preparing: UPDATE book set bookName=?,bookAuthor=?,bookPrice=? WHERE bookId=?
+2018-02-24 14:35:25.863 DEBUG [main]cn.study.cn.study.dao.IBookdao.up.debug:145 -==> Parameters: 未来以来(String), 马云(String), 100(Integer), 2(Integer)
+2018-02-24 14:35:25.864 DEBUG [main]cn.study.cn.study.dao.IBookdao.up.debug:145 -<==    Updates: 1
+2018-02-24 14:35:25.919 DEBUG [main]cn.study.cn.study.dao.IBookdao.inser.debug:145 -==>  Preparing: INSERT INTO book (bookName,bookAuthor,bookPrice) VALUES (?,?,?)
+2018-02-24 14:35:25.921 DEBUG [main]cn.study.cn.study.dao.IBookdao.inser.debug:145 -==> Parameters: 未来以来(String), 马云(String), 100(Integer)
+2018-02-24 14:35:25.923 DEBUG [main]cn.study.cn.study.dao.IBookdao.inser.debug:145 -<==    Updates: 1
+2018-02-24 14:36:55.659 DEBUG [main]cn.study.cn.study.dao.IBookdao.up.debug:145 -==>  Preparing: UPDATE book set bookName=?,bookAuthor=?,bookPrice=? WHERE bookId=?
+2018-02-24 14:36:55.699 DEBUG [main]cn.study.cn.study.dao.IBookdao.up.debug:145 -==> Parameters: 未来以来(String), 马云(String), 100(Integer), 2(Integer)
+2018-02-24 14:36:55.700 DEBUG [main]cn.study.cn.study.dao.IBookdao.up.debug:145 -<==    Updates: 1
+2018-02-24 14:36:55.743 DEBUG [main]cn.study.cn.study.dao.IBookdao.inser.debug:145 -==>  Preparing: INSERT INTO book (bookName,bookAuthor,bookPrice) VALUES (?,?,?)
+2018-02-24 14:36:55.744 DEBUG [main]cn.study.cn.study.dao.IBookdao.inser.debug:145 -==> Parameters: 未来以来(String), 马云(String), 100(Integer)
+2018-02-24 14:36:55.745 DEBUG [main]cn.study.cn.study.dao.IBookdao.inser.debug:145 -<==    Updates: 1
+2018-02-24 14:36:55.787 DEBUG [main]cn.study.cn.study.dao.IBookdao.books.debug:145 -==>  Preparing: select bookName,bookAuthor,bookPrice from book WHERE bookName LIKE '%' ? '%'
+2018-02-24 14:36:55.789 DEBUG [main]cn.study.cn.study.dao.IBookdao.books.debug:145 -==> Parameters: 来(String)
+2018-02-24 14:36:55.810 DEBUG [main]cn.study.cn.study.dao.IBookdao.books.debug:145 -<==      Total: 10
+2018-02-24 14:36:55.875 DEBUG [main]cn.study.cn.study.dao.IBookdao.del.debug:145 -==>  Preparing: DELETE FROM book WHERE bookId=?
+2018-02-24 14:36:55.876 DEBUG [main]cn.study.cn.study.dao.IBookdao.del.debug:145 -==> Parameters: 1(Integer)
+2018-02-24 14:36:55.877 DEBUG [main]cn.study.cn.study.dao.IBookdao.del.debug:145 -<==    Updates: 0
+2018-02-24 14:38:01.533 DEBUG [main]cn.study.cn.study.dao.IBookdao.books.debug:145 -==>  Preparing: select bookName,bookAuthor,bookPrice from book WHERE bookName LIKE '%' ? '%'
+2018-02-24 14:38:01.581 DEBUG [main]cn.study.cn.study.dao.IBookdao.books.debug:145 -==> Parameters: 来(String)
+2018-02-24 14:38:01.603 DEBUG [main]cn.study.cn.study.dao.IBookdao.books.debug:145 -<==      Total: 10
+2018-02-24 14:38:01.663 DEBUG [main]cn.study.cn.study.dao.IBookdao.inser.debug:145 -==>  Preparing: INSERT INTO book (bookName,bookAuthor,bookPrice) VALUES (?,?,?)
+2018-02-24 14:38:01.665 DEBUG [main]cn.study.cn.study.dao.IBookdao.inser.debug:145 -==> Parameters: 未来以来(String), 马云(String), 100(Integer)
+2018-02-24 14:38:01.666 DEBUG [main]cn.study.cn.study.dao.IBookdao.inser.debug:145 -<==    Updates: 1
+2018-02-24 14:38:01.704 DEBUG [main]cn.study.cn.study.dao.IBookdao.del.debug:145 -==>  Preparing: DELETE FROM book WHERE bookId=?
+2018-02-24 14:38:01.704 DEBUG [main]cn.study.cn.study.dao.IBookdao.del.debug:145 -==> Parameters: 1(Integer)
+2018-02-24 14:38:01.705 DEBUG [main]cn.study.cn.study.dao.IBookdao.del.debug:145 -<==    Updates: 0
+2018-02-24 14:38:01.754 DEBUG [main]cn.study.cn.study.dao.IBookdao.up.debug:145 -==>  Preparing: UPDATE book set bookName=?,bookAuthor=?,bookPrice=? WHERE bookId=?
+2018-02-24 14:38:01.755 DEBUG [main]cn.study.cn.study.dao.IBookdao.up.debug:145 -==> Parameters: 未来以来(String), 马云(String), 100(Integer), 2(Integer)
+2018-02-24 14:38:01.763 DEBUG [main]cn.study.cn.study.dao.IBookdao.up.debug:145 -<==    Updates: 1
+2018-02-24 14:38:03.079 DEBUG [main]cn.study.cn.study.dao.IBookdao.del.debug:145 -==>  Preparing: DELETE FROM book WHERE bookId=?
+2018-02-24 14:38:03.111 DEBUG [main]cn.study.cn.study.dao.IBookdao.del.debug:145 -==> Parameters: 1(Integer)
+2018-02-24 14:38:03.112 DEBUG [main]cn.study.cn.study.dao.IBookdao.del.debug:145 -<==    Updates: 0
+2018-02-24 14:38:03.146 DEBUG [main]cn.study.cn.study.dao.IBookdao.inser.debug:145 -==>  Preparing: INSERT INTO book (bookName,bookAuthor,bookPrice) VALUES (?,?,?)
+2018-02-24 14:38:03.147 DEBUG [main]cn.study.cn.study.dao.IBookdao.inser.debug:145 -==> Parameters: 未来以来(String), 马云(String), 100(Integer)
+2018-02-24 14:38:03.149 DEBUG [main]cn.study.cn.study.dao.IBookdao.inser.debug:145 -<==    Updates: 1
+2018-02-24 14:38:03.192 DEBUG [main]cn.study.cn.study.dao.IBookdao.books.debug:145 -==>  Preparing: select bookName,bookAuthor,bookPrice from book WHERE bookName LIKE '%' ? '%'
+2018-02-24 14:38:03.193 DEBUG [main]cn.study.cn.study.dao.IBookdao.books.debug:145 -==> Parameters: 来(String)
+2018-02-24 14:38:03.206 DEBUG [main]cn.study.cn.study.dao.IBookdao.books.debug:145 -<==      Total: 12
+2018-02-24 14:38:03.265 DEBUG [main]cn.study.cn.study.dao.IBookdao.up.debug:145 -==>  Preparing: UPDATE book set bookName=?,bookAuthor=?,bookPrice=? WHERE bookId=?
+2018-02-24 14:38:03.266 DEBUG [main]cn.study.cn.study.dao.IBookdao.up.debug:145 -==> Parameters: 未来以来(String), 马云(String), 100(Integer), 2(Integer)
+2018-02-24 14:38:03.267 DEBUG [main]cn.study.cn.study.dao.IBookdao.up.debug:145 -<==    Updates: 1
+2018-02-24 14:44:38.128 DEBUG [main]cn.study.cn.study.dao.IBookdao.inser.debug:145 -==>  Preparing: INSERT INTO book (bookName,bookAuthor,bookPrice) VALUES (?,?,?)
+2018-02-24 14:44:38.176 DEBUG [main]cn.study.cn.study.dao.IBookdao.inser.debug:145 -==> Parameters: 未来以来(String), 马云(String), 100(Integer)
+2018-02-24 14:44:38.177 DEBUG [main]cn.study.cn.study.dao.IBookdao.inser.debug:145 -<==    Updates: 1
+2018-02-24 14:44:38.228 DEBUG [main]cn.study.cn.study.dao.IBookdao.up.debug:145 -==>  Preparing: UPDATE book set bookName=?,bookAuthor=?,bookPrice=? WHERE bookId=?
+2018-02-24 14:44:38.229 DEBUG [main]cn.study.cn.study.dao.IBookdao.up.debug:145 -==> Parameters: 未来以来(String), 马云(String), 100(Integer), 2(Integer)
+2018-02-24 14:44:38.230 DEBUG [main]cn.study.cn.study.dao.IBookdao.up.debug:145 -<==    Updates: 1
+2018-02-24 14:44:38.273 DEBUG [main]cn.study.cn.study.dao.IBookdao.del.debug:145 -==>  Preparing: DELETE FROM book WHERE bookId=?
+2018-02-24 14:44:38.275 DEBUG [main]cn.study.cn.study.dao.IBookdao.del.debug:145 -==> Parameters: 1(Integer)
+2018-02-24 14:44:38.276 DEBUG [main]cn.study.cn.study.dao.IBookdao.del.debug:145 -<==    Updates: 0
+2018-02-24 14:44:38.453 DEBUG [main]cn.study.cn.study.dao.IBookdao.books.debug:145 -==>  Preparing: select bookName,bookAuthor,bookPrice from book WHERE bookName LIKE '%' ? '%'
+2018-02-24 14:44:38.455 DEBUG [main]cn.study.cn.study.dao.IBookdao.books.debug:145 -==> Parameters: 来(String)
+2018-02-24 14:44:38.467 DEBUG [main]cn.study.cn.study.dao.IBookdao.books.debug:145 -<==      Total: 13
+2018-02-24 14:58:52.871 DEBUG [main]cn.study.cn.study.dao.IBookdao.del.debug:145 -==>  Preparing: DELETE FROM book WHERE bookId=?
+2018-02-24 14:58:52.901 DEBUG [main]cn.study.cn.study.dao.IBookdao.del.debug:145 -==> Parameters: 1(Integer)
+2018-02-24 14:58:52.906 DEBUG [main]cn.study.cn.study.dao.IBookdao.del.debug:145 -<==    Updates: 0
+2018-02-24 14:58:52.947 DEBUG [main]cn.study.cn.study.dao.IBookdao.books.debug:145 -==>  Preparing: select bookName,bookAuthor,bookPrice from book WHERE bookName LIKE '%' ? '%'
+2018-02-24 14:58:52.949 DEBUG [main]cn.study.cn.study.dao.IBookdao.books.debug:145 -==> Parameters: 来(String)
+2018-02-24 14:58:52.967 DEBUG [main]cn.study.cn.study.dao.IBookdao.books.debug:145 -<==      Total: 13
+2018-02-24 14:58:52.999 DEBUG [main]cn.study.cn.study.dao.IBookdao.up.debug:145 -==>  Preparing: UPDATE book set bookName=?,bookAuthor=?,bookPrice=? WHERE bookId=?
+2018-02-24 14:58:53.001 DEBUG [main]cn.study.cn.study.dao.IBookdao.up.debug:145 -==> Parameters: 未来以来(String), 马云(String), 100(Integer), 2(Integer)
+2018-02-24 14:58:53.002 DEBUG [main]cn.study.cn.study.dao.IBookdao.up.debug:145 -<==    Updates: 1
+2018-02-24 14:58:53.045 DEBUG [main]cn.study.cn.study.dao.IBookdao.inser.debug:145 -==>  Preparing: INSERT INTO book (bookName,bookAuthor,bookPrice) VALUES (?,?,?)
+2018-02-24 14:58:53.046 DEBUG [main]cn.study.cn.study.dao.IBookdao.inser.debug:145 -==> Parameters: 未来以来(String), 马云(String), 100(Integer)
+2018-02-24 14:58:53.047 DEBUG [main]cn.study.cn.study.dao.IBookdao.inser.debug:145 -<==    Updates: 1
+2018-02-24 14:58:53.048 DEBUG [main]cn.study.cn.study.dao.IBookdao.inser!selectKey.debug:145 -==>  Preparing: SELECT @@IDENTITY
+2018-02-24 14:58:53.151 DEBUG [main]cn.study.cn.study.dao.IBookdao.inser!selectKey.debug:145 -==> Parameters:
+2018-02-24 14:58:53.170 DEBUG [main]cn.study.cn.study.dao.IBookdao.inser!selectKey.debug:145 -<==      Total: 1
+2018-02-24 15:00:38.772 DEBUG [main]cn.study.cn.study.dao.IBookdao.books.debug:145 -==>  Preparing: select bookName,bookAuthor,bookPrice from book WHERE bookName LIKE '%' ? '%'
+2018-02-24 15:00:38.797 DEBUG [main]cn.study.cn.study.dao.IBookdao.books.debug:145 -==> Parameters: 来(String)
+2018-02-24 15:00:38.831 DEBUG [main]cn.study.cn.study.dao.IBookdao.books.debug:145 -<==      Total: 14
+2018-02-24 15:00:38.884 DEBUG [main]cn.study.cn.study.dao.IBookdao.inser.debug:145 -==>  Preparing: INSERT INTO book (bookName,bookAuthor,bookPrice) VALUES (?,?,?)
+2018-02-24 15:00:38.885 DEBUG [main]cn.study.cn.study.dao.IBookdao.inser.debug:145 -==> Parameters: 未来以来(String), 马云(String), 100(Integer)
+2018-02-24 15:00:38.886 DEBUG [main]cn.study.cn.study.dao.IBookdao.inser.debug:145 -<==    Updates: 1
+2018-02-24 15:00:38.887 DEBUG [main]cn.study.cn.study.dao.IBookdao.inser!selectKey.debug:145 -==>  Preparing: SELECT @@IDENTITY
+2018-02-24 15:00:38.887 DEBUG [main]cn.study.cn.study.dao.IBookdao.inser!selectKey.debug:145 -==> Parameters:
+2018-02-24 15:00:38.889 DEBUG [main]cn.study.cn.study.dao.IBookdao.inser!selectKey.debug:145 -<==      Total: 1
+2018-02-24 15:00:38.932 DEBUG [main]cn.study.cn.study.dao.IBookdao.up.debug:145 -==>  Preparing: UPDATE book set bookName=?,bookAuthor=?,bookPrice=? WHERE bookId=?
+2018-02-24 15:00:38.933 DEBUG [main]cn.study.cn.study.dao.IBookdao.up.debug:145 -==> Parameters: 未来以来(String), 马云(String), 100(Integer), 2(Integer)
+2018-02-24 15:00:38.934 DEBUG [main]cn.study.cn.study.dao.IBookdao.up.debug:145 -<==    Updates: 1
+2018-02-24 15:00:38.986 DEBUG [main]cn.study.cn.study.dao.IBookdao.del.debug:145 -==>  Preparing: DELETE FROM book WHERE bookId=?
+2018-02-24 15:00:38.987 DEBUG [main]cn.study.cn.study.dao.IBookdao.del.debug:145 -==> Parameters: 1(Integer)
+2018-02-24 15:00:38.988 DEBUG [main]cn.study.cn.study.dao.IBookdao.del.debug:145 -<==    Updates: 0
+2018-02-24 15:02:02.632 DEBUG [main]cn.study.cn.study.dao.IBookdao.books.debug:145 -==>  Preparing: select bookName,bookAuthor,bookPrice from book WHERE bookName LIKE '%' ? '%'
+2018-02-24 15:02:02.653 DEBUG [main]cn.study.cn.study.dao.IBookdao.books.debug:145 -==> Parameters: 来(String)
+2018-02-24 15:02:02.667 DEBUG [main]cn.study.cn.study.dao.IBookdao.books.debug:145 -<==      Total: 15
+2018-02-24 15:02:02.701 DEBUG [main]cn.study.cn.study.dao.IBookdao.del.debug:145 -==>  Preparing: DELETE FROM book WHERE bookId=?
+2018-02-24 15:02:02.702 DEBUG [main]cn.study.cn.study.dao.IBookdao.del.debug:145 -==> Parameters: 1(Integer)
+2018-02-24 15:02:02.703 DEBUG [main]cn.study.cn.study.dao.IBookdao.del.debug:145 -<==    Updates: 0
+2018-02-24 15:02:02.734 DEBUG [main]cn.study.cn.study.dao.IBookdao.up.debug:145 -==>  Preparing: UPDATE book set bookName=?,bookAuthor=?,bookPrice=? WHERE bookId=?
+2018-02-24 15:02:02.735 DEBUG [main]cn.study.cn.study.dao.IBookdao.up.debug:145 -==> Parameters: 未来以来(String), 马云(String), 100(Integer), 2(Integer)
+2018-02-24 15:02:02.736 DEBUG [main]cn.study.cn.study.dao.IBookdao.up.debug:145 -<==    Updates: 1
+2018-02-24 15:02:02.765 DEBUG [main]cn.study.cn.study.dao.IBookdao.inser.debug:145 -==>  Preparing: INSERT INTO book (bookName,bookAuthor,bookPrice) VALUES (?,?,?)
+2018-02-24 15:02:02.766 DEBUG [main]cn.study.cn.study.dao.IBookdao.inser.debug:145 -==> Parameters: 未来以来(String), 马云(String), 100(Integer)
+2018-02-24 15:02:02.766 DEBUG [main]cn.study.cn.study.dao.IBookdao.inser.debug:145 -<==    Updates: 1
+2018-02-24 15:02:02.767 DEBUG [main]cn.study.cn.study.dao.IBookdao.inser!selectKey.debug:145 -==>  Preparing: SELECT @@IDENTITY
+2018-02-24 15:02:02.767 DEBUG [main]cn.study.cn.study.dao.IBookdao.inser!selectKey.debug:145 -==> Parameters:
+2018-02-24 15:02:02.769 DEBUG [main]cn.study.cn.study.dao.IBookdao.inser!selectKey.debug:145 -<==      Total: 1
+2018-02-24 15:02:50.341 DEBUG [main]cn.study.cn.study.dao.IBookdao.inser.debug:145 -==>  Preparing: INSERT INTO book (bookName,bookAuthor,bookPrice) VALUES (?,?,?)
+2018-02-24 15:02:50.400 DEBUG [main]cn.study.cn.study.dao.IBookdao.inser.debug:145 -==> Parameters: 未来以来(String), 马云(String), 100(Integer)
+2018-02-24 15:02:50.402 DEBUG [main]cn.study.cn.study.dao.IBookdao.inser.debug:145 -<==    Updates: 1
+2018-02-24 15:02:50.403 DEBUG [main]cn.study.cn.study.dao.IBookdao.inser!selectKey.debug:145 -==>  Preparing: SELECT @@IDENTITY
+2018-02-24 15:02:50.404 DEBUG [main]cn.study.cn.study.dao.IBookdao.inser!selectKey.debug:145 -==> Parameters:
+2018-02-24 15:02:50.430 DEBUG [main]cn.study.cn.study.dao.IBookdao.inser!selectKey.debug:145 -<==      Total: 1
+2018-02-24 15:02:50.475 DEBUG [main]cn.study.cn.study.dao.IBookdao.del.debug:145 -==>  Preparing: DELETE FROM book WHERE bookId=?
+2018-02-24 15:02:50.476 DEBUG [main]cn.study.cn.study.dao.IBookdao.del.debug:145 -==> Parameters: 1(Integer)
+2018-02-24 15:02:50.477 DEBUG [main]cn.study.cn.study.dao.IBookdao.del.debug:145 -<==    Updates: 0
+2018-02-24 15:02:50.511 DEBUG [main]cn.study.cn.study.dao.IBookdao.books.debug:145 -==>  Preparing: select bookName,bookAuthor,bookPrice from book WHERE bookName LIKE '%' ? '%'
+2018-02-24 15:02:50.513 DEBUG [main]cn.study.cn.study.dao.IBookdao.books.debug:145 -==> Parameters: 来(String)
+2018-02-24 15:02:50.519 DEBUG [main]cn.study.cn.study.dao.IBookdao.books.debug:145 -<==      Total: 17
+2018-02-24 15:02:50.559 DEBUG [main]cn.study.cn.study.dao.IBookdao.up.debug:145 -==>  Preparing: UPDATE book set bookName=?,bookAuthor=?,bookPrice=? WHERE bookId=?
+2018-02-24 15:02:50.560 DEBUG [main]cn.study.cn.study.dao.IBookdao.up.debug:145 -==> Parameters: 未来以来(String), 马云(String), 100(Integer), 2(Integer)
+2018-02-24 15:02:50.561 DEBUG [main]cn.study.cn.study.dao.IBookdao.up.debug:145 -<==    Updates: 1
+2018-02-24 15:07:59.248 DEBUG [main]cn.study.cn.study.dao.IBookdao.books.debug:145 -==>  Preparing: select bookName,bookAuthor,bookPrice from book WHERE bookName LIKE '%' ? '%'
+2018-02-24 15:07:59.297 DEBUG [main]cn.study.cn.study.dao.IBookdao.books.debug:145 -==> Parameters: 来(String)
+2018-02-24 15:07:59.315 DEBUG [main]cn.study.cn.study.dao.IBookdao.books.debug:145 -<==      Total: 17
+2018-02-24 15:28:49.544 DEBUG [main]cn.study.cn.study.dao.IBookdao.books.debug:145 -==>  Preparing: select bookName,bookAuthor,bookPrice from book WHERE bookName LIKE '%' ? '%'
+2018-02-24 15:28:49.578 DEBUG [main]cn.study.cn.study.dao.IBookdao.books.debug:145 -==> Parameters: 来(String)
+2018-02-24 15:28:49.614 DEBUG [main]cn.study.cn.study.dao.IBookdao.books.debug:145 -<==      Total: 17
+2018-02-24 16:07:44.104 DEBUG [main]cn.study.cn.study.dao.IBookdao.selectone.debug:145 -==>  Preparing: select bookName,bookAuthor FROM book WHERE bookName LIKE '%' ? '%' and bookPrice>?
+2018-02-24 16:07:44.142 DEBUG [main]cn.study.cn.study.dao.IBookdao.selectone.debug:145 -==> Parameters: 来(String), 30(Integer)
+2018-02-24 16:07:44.155 DEBUG [main]cn.study.cn.study.dao.IBookdao.selectone.debug:145 -<==      Total: 17
+2018-02-24 16:07:58.191 DEBUG [main]cn.study.cn.study.dao.IBookdao.selectone.debug:145 -==>  Preparing: select bookName,bookAuthor FROM book WHERE bookName LIKE '%' ? '%' and bookPrice>?
+2018-02-24 16:07:58.221 DEBUG [main]cn.study.cn.study.dao.IBookdao.selectone.debug:145 -==> Parameters: 来(String), 100(Integer)
+2018-02-24 16:07:58.232 DEBUG [main]cn.study.cn.study.dao.IBookdao.selectone.debug:145 -<==      Total: 0
+2018-02-24 16:10:21.147 DEBUG [main]cn.study.cn.study.dao.IBookdao.selecttwo.debug:145 -==>  Preparing: select bookName,bookAuthor FROM book WHERE bookName LIKE '%' ? '%' and bookPrice>?
+2018-02-24 16:10:21.171 DEBUG [main]cn.study.cn.study.dao.IBookdao.selecttwo.debug:145 -==> Parameters: 四(String), 30(Integer)
+2018-02-24 16:10:21.205 DEBUG [main]cn.study.cn.study.dao.IBookdao.selecttwo.debug:145 -<==      Total: 0
+2018-02-24 16:13:23.653 DEBUG [main]cn.study.cn.study.dao.IBookdao.selectone.debug:145 -==>  Preparing: select bookName,bookAuthor FROM book WHERE bookName LIKE '%' ? '%' and bookPrice>?
+2018-02-24 16:13:23.674 DEBUG [main]cn.study.cn.study.dao.IBookdao.selectone.debug:145 -==> Parameters: 来(String), 100(Integer)
+2018-02-24 16:13:23.686 DEBUG [main]cn.study.cn.study.dao.IBookdao.selectone.debug:145 -<==      Total: 0
+2018-02-24 16:14:07.991 DEBUG [main]cn.study.cn.study.dao.IBookdao.selecttwo.debug:145 -==>  Preparing: select bookName,bookAuthor FROM book WHERE bookName LIKE '%' ? '%' and bookPrice>?
+2018-02-24 16:14:08.023 DEBUG [main]cn.study.cn.study.dao.IBookdao.selecttwo.debug:145 -==> Parameters: 四(String), 30(Integer)
+2018-02-24 16:14:08.033 DEBUG [main]cn.study.cn.study.dao.IBookdao.selecttwo.debug:145 -<==      Total: 0
+2018-02-24 16:14:12.565 DEBUG [main]cn.study.cn.study.dao.IBookdao.selectone.debug:145 -==>  Preparing: select bookName,bookAuthor FROM book WHERE bookName LIKE '%' ? '%' and bookPrice>?
+2018-02-24 16:14:12.596 DEBUG [main]cn.study.cn.study.dao.IBookdao.selectone.debug:145 -==> Parameters: 来(String), 100(Integer)
+2018-02-24 16:14:12.614 DEBUG [main]cn.study.cn.study.dao.IBookdao.selectone.debug:145 -<==      Total: 0
+2018-02-24 16:14:24.893 DEBUG [main]cn.study.cn.study.dao.IBookdao.selectone.debug:145 -==>  Preparing: select bookName,bookAuthor FROM book WHERE bookName LIKE '%' ? '%' and bookPrice>?
+2018-02-24 16:14:24.916 DEBUG [main]cn.study.cn.study.dao.IBookdao.selectone.debug:145 -==> Parameters: 来(String), 10(Integer)
+2018-02-24 16:14:24.934 DEBUG [main]cn.study.cn.study.dao.IBookdao.selectone.debug:145 -<==      Total: 17
+2018-02-24 16:33:38.458 DEBUG [main]cn.study.cn.study.dao.IBookdao.findnew.debug:145 -==>  Preparing: select * from book
+2018-02-24 16:33:38.479 DEBUG [main]cn.study.cn.study.dao.IBookdao.findnew.debug:145 -==> Parameters:
+2018-02-24 16:33:38.494 DEBUG [main]cn.study.cn.study.dao.IBookdao.findnew.debug:145 -<==      Total: 18
+2018-02-24 16:35:02.560 DEBUG [main]cn.study.cn.study.dao.IBookdao.findnew.debug:145 -==>  Preparing: select * from book WHERE bookName LIKE '%' ? '%'
+2018-02-24 16:35:02.587 DEBUG [main]cn.study.cn.study.dao.IBookdao.findnew.debug:145 -==> Parameters: 水(String)
+2018-02-24 16:35:02.607 DEBUG [main]cn.study.cn.study.dao.IBookdao.findnew.debug:145 -<==      Total: 1
+2018-02-24 17:13:37.757 DEBUG [main]cn.study.cn.study.dao.IBookdao.findo.debug:145 -==>  Preparing: select * from book WHERE bookId IN ( ? , ? )
+2018-02-24 17:13:37.817 DEBUG [main]cn.study.cn.study.dao.IBookdao.findo.debug:145 -==> Parameters: 10(Integer), 6(Integer)
+2018-02-24 17:13:37.838 DEBUG [main]cn.study.cn.study.dao.IBookdao.findo.debug:145 -<==      Total: 2
+2018-02-24 17:20:19.498 DEBUG [main]cn.study.cn.study.dao.IBookdao.findt.debug:145 -==>  Preparing: select * from book WHERE bookId IN ( ? , ? )
+2018-02-24 17:20:19.517 DEBUG [main]cn.study.cn.study.dao.IBookdao.findt.debug:145 -==> Parameters: 10(Integer), 3(Integer)
+2018-02-24 17:20:19.530 DEBUG [main]cn.study.cn.study.dao.IBookdao.findt.debug:145 -<==      Total: 2
+2018-02-24 17:24:53.328 DEBUG [main]cn.study.cn.study.dao.IBookdao.findth.debug:145 -==>  Preparing: select * from book WHERE bookId in ( ? , ? )
+2018-02-24 17:24:53.349 DEBUG [main]cn.study.cn.study.dao.IBookdao.findth.debug:145 -==> Parameters: 10(Integer), 3(Integer)
+2018-02-24 17:24:53.364 DEBUG [main]cn.study.cn.study.dao.IBookdao.findth.debug:145 -<==      Total: 2
+2018-02-26 15:32:19.145 DEBUG [main]cn.study.dao.functiondao.three.debug:145 -==>  Preparing: SELECT dept.`deptid`,dept.`deptname`,emp.`empname` FROM dept,emp WHERE dept.`deptid`=emp.`deptid` AND emp.`empid`=? 
+2018-02-26 15:32:19.166 DEBUG [main]cn.study.dao.functiondao.three.debug:145 -==> Parameters: 1(Integer)
+2018-02-26 15:33:51.438 DEBUG [main]cn.study.dao.functiondao.three.debug:145 -==>  Preparing: SELECT * FROM dept,emp WHERE dept.`deptid`=emp.`deptid` AND emp.`empid`=? 
+2018-02-26 15:33:51.460 DEBUG [main]cn.study.dao.functiondao.three.debug:145 -==> Parameters: 1(Integer)
+2018-02-26 15:35:18.619 DEBUG [main]cn.study.dao.functiondao.three.debug:145 -==>  Preparing: SELECT * FROM dept,emp WHERE dept.`deptid`=emp.`deptid` AND emp.`empid`=? 
+2018-02-26 15:35:18.663 DEBUG [main]cn.study.dao.functiondao.three.debug:145 -==> Parameters: 1(Integer)
+2018-02-26 15:35:18.698 DEBUG [main]cn.study.dao.functiondao.three.debug:145 -<==      Total: 1
+2018-02-26 16:37:02.148 DEBUG [main]cn.study.dao.functiondao.one.debug:145 -==>  Preparing: SELECT dept.`deptid`,dept.`deptname`,emp.`empname` FROM dept,emp WHERE dept.`deptid`=emp.`deptid` AND dept.`deptid`=? 
+2018-02-26 16:37:02.170 DEBUG [main]cn.study.dao.functiondao.one.debug:145 -==> Parameters: 1(Integer)
+2018-02-26 16:37:02.187 DEBUG [main]cn.study.dao.functiondao.one.debug:145 -<==      Total: 2
+2018-02-26 16:37:08.013 DEBUG [main]cn.study.dao.functiondao.tea.debug:145 -==>  Preparing: SELECT * FROM Student AS a,teacher AS b,`teacher_student` AS c WHERE c.sid=a.sid AND c.tid=b.tid AND b.tid=? 
+2018-02-26 16:37:08.047 DEBUG [main]cn.study.dao.functiondao.tea.debug:145 -==> Parameters: 1(Integer)
+2018-02-26 16:37:08.075 DEBUG [main]cn.study.dao.functiondao.tea.debug:145 -<==      Total: 2
+2018-02-26 16:37:15.177 DEBUG [main]cn.study.dao.functiondao.three.debug:145 -==>  Preparing: SELECT * FROM dept,emp WHERE dept.`deptid`=emp.`deptid` AND emp.`empid`=? 
+2018-02-26 16:37:15.202 DEBUG [main]cn.study.dao.functiondao.three.debug:145 -==> Parameters: 1(Integer)
+2018-02-26 16:37:15.227 DEBUG [main]cn.study.dao.functiondao.three.debug:145 -<==      Total: 1
+2018-02-26 16:37:20.268 DEBUG [main]cn.study.dao.functiondao.two.debug:145 -==>  Preparing: SELECT * FROM dept where deptid=? 
+2018-02-26 16:37:20.323 DEBUG [main]cn.study.dao.functiondao.two.debug:145 -==> Parameters: 1(Integer)
+2018-02-26 16:37:20.342 DEBUG [main]cn.study.dao.functiondao.set.debug:145 -====>  Preparing: select * from emp where deptid=? 
+2018-02-26 16:37:20.343 DEBUG [main]cn.study.dao.functiondao.set.debug:145 -====> Parameters: 1(Integer)
+2018-02-26 16:37:20.345 DEBUG [main]cn.study.dao.functiondao.set.debug:145 -<====      Total: 2
+2018-02-26 16:37:20.346 DEBUG [main]cn.study.dao.functiondao.two.debug:145 -<==      Total: 1
+2018-02-26 17:21:52.052 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -==>  Preparing: select * from `category` where pid=? 
+2018-02-26 17:21:52.072 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -==> Parameters: 0(Integer)
+2018-02-26 17:21:52.091 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -====>  Preparing: select * from `category` where pid=? 
+2018-02-26 17:21:52.092 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -====> Parameters: 1(Integer)
+2018-02-26 17:21:52.094 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -======>  Preparing: select * from `category` where pid=? 
+2018-02-26 17:21:52.094 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -======> Parameters: 3(Integer)
+2018-02-26 17:21:52.096 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -<======      Total: 0
+2018-02-26 17:21:52.097 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -======>  Preparing: select * from `category` where pid=? 
+2018-02-26 17:21:52.097 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -======> Parameters: 5(Integer)
+2018-02-26 17:21:52.099 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -<======      Total: 0
+2018-02-26 17:21:52.101 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -<====      Total: 2
+2018-02-26 17:21:52.102 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -====>  Preparing: select * from `category` where pid=? 
+2018-02-26 17:21:52.103 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -====> Parameters: 2(Integer)
+2018-02-26 17:21:52.103 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -======>  Preparing: select * from `category` where pid=? 
+2018-02-26 17:21:52.103 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -======> Parameters: 4(Integer)
+2018-02-26 17:21:52.103 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -========>  Preparing: select * from `category` where pid=? 
+2018-02-26 17:21:52.103 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -========> Parameters: 7(Integer)
+2018-02-26 17:21:52.103 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -<========      Total: 0
+2018-02-26 17:21:52.103 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -<======      Total: 1
+2018-02-26 17:21:52.103 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -======>  Preparing: select * from `category` where pid=? 
+2018-02-26 17:21:52.103 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -======> Parameters: 6(Integer)
+2018-02-26 17:21:52.103 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -<======      Total: 0
+2018-02-26 17:21:52.103 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -<====      Total: 2
+2018-02-26 17:21:52.103 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -<==      Total: 2
+2018-02-26 17:22:33.767 DEBUG [main]cn.study.dao.functiondao.tea.debug:145 -==>  Preparing: SELECT * FROM Student AS a,teacher AS b,`teacher_student` AS c WHERE c.sid=a.sid AND c.tid=b.tid AND b.tid=? 
+2018-02-26 17:22:33.826 DEBUG [main]cn.study.dao.functiondao.tea.debug:145 -==> Parameters: 1(Integer)
+2018-02-26 17:22:33.841 DEBUG [main]cn.study.dao.functiondao.tea.debug:145 -<==      Total: 2
+2018-02-26 17:22:39.203 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -==>  Preparing: select * from `category` where pid=? 
+2018-02-26 17:22:39.235 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -==> Parameters: 0(Integer)
+2018-02-26 17:22:39.255 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -====>  Preparing: select * from `category` where pid=? 
+2018-02-26 17:22:39.256 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -====> Parameters: 1(Integer)
+2018-02-26 17:22:39.257 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -======>  Preparing: select * from `category` where pid=? 
+2018-02-26 17:22:39.258 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -======> Parameters: 3(Integer)
+2018-02-26 17:22:39.259 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -<======      Total: 0
+2018-02-26 17:22:39.260 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -======>  Preparing: select * from `category` where pid=? 
+2018-02-26 17:22:39.261 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -======> Parameters: 5(Integer)
+2018-02-26 17:22:39.262 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -<======      Total: 0
+2018-02-26 17:22:39.262 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -<====      Total: 2
+2018-02-26 17:22:39.263 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -====>  Preparing: select * from `category` where pid=? 
+2018-02-26 17:22:39.264 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -====> Parameters: 2(Integer)
+2018-02-26 17:22:39.271 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -======>  Preparing: select * from `category` where pid=? 
+2018-02-26 17:22:39.272 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -======> Parameters: 4(Integer)
+2018-02-26 17:22:39.275 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -========>  Preparing: select * from `category` where pid=? 
+2018-02-26 17:22:39.275 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -========> Parameters: 7(Integer)
+2018-02-26 17:22:39.277 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -<========      Total: 0
+2018-02-26 17:22:39.278 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -<======      Total: 1
+2018-02-26 17:22:39.278 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -======>  Preparing: select * from `category` where pid=? 
+2018-02-26 17:22:39.279 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -======> Parameters: 6(Integer)
+2018-02-26 17:22:39.281 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -<======      Total: 0
+2018-02-26 17:22:39.281 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -<====      Total: 2
+2018-02-26 17:22:39.282 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -<==      Total: 2
+2018-02-26 17:22:47.641 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -==>  Preparing: select * from `category` where pid=? 
+2018-02-26 17:22:47.684 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -==> Parameters: 1(Integer)
+2018-02-26 17:22:47.703 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -====>  Preparing: select * from `category` where pid=? 
+2018-02-26 17:22:47.703 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -====> Parameters: 3(Integer)
+2018-02-26 17:22:47.704 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -<====      Total: 0
+2018-02-26 17:22:47.705 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -====>  Preparing: select * from `category` where pid=? 
+2018-02-26 17:22:47.706 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -====> Parameters: 5(Integer)
+2018-02-26 17:22:47.707 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -<====      Total: 0
+2018-02-26 17:22:47.707 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -<==      Total: 2
+2018-02-26 17:22:55.222 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -==>  Preparing: select * from `category` where pid=? 
+2018-02-26 17:22:55.260 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -==> Parameters: 1(Integer)
+2018-02-26 17:22:55.278 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -====>  Preparing: select * from `category` where pid=? 
+2018-02-26 17:22:55.279 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -====> Parameters: 3(Integer)
+2018-02-26 17:22:55.280 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -<====      Total: 0
+2018-02-26 17:22:55.281 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -====>  Preparing: select * from `category` where pid=? 
+2018-02-26 17:22:55.282 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -====> Parameters: 5(Integer)
+2018-02-26 17:22:55.283 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -<====      Total: 0
+2018-02-26 17:22:55.283 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -<==      Total: 2
+2018-02-26 17:27:49.276 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -==>  Preparing: select * from category where pid=? 
+2018-02-26 17:27:49.343 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -==> Parameters: 3(Integer)
+2018-02-26 17:27:49.355 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -<==      Total: 0
+2018-02-26 17:29:47.848 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -==>  Preparing: select * from category where pid=? 
+2018-02-26 17:29:47.891 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -==> Parameters: 1(Integer)
+2018-02-26 17:29:47.916 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -====>  Preparing: select * from category where pid=? 
+2018-02-26 17:29:47.917 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -====> Parameters: 3(Integer)
+2018-02-26 17:29:47.918 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -<====      Total: 0
+2018-02-26 17:29:47.920 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -====>  Preparing: select * from category where pid=? 
+2018-02-26 17:29:47.920 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -====> Parameters: 5(Integer)
+2018-02-26 17:29:47.922 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -<====      Total: 0
+2018-02-26 17:29:47.923 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -<==      Total: 2
+2018-02-26 23:50:48.243 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -==>  Preparing: select * from category where pid=? 
+2018-02-26 23:50:48.293 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -==> Parameters: 1(Integer)
+2018-02-26 23:50:48.329 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -====>  Preparing: select * from category where pid=? 
+2018-02-26 23:50:48.330 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -====> Parameters: 3(Integer)
+2018-02-26 23:50:48.331 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -<====      Total: 0
+2018-02-26 23:50:48.333 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -====>  Preparing: select * from category where pid=? 
+2018-02-26 23:50:48.333 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -====> Parameters: 5(Integer)
+2018-02-26 23:50:48.334 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -<====      Total: 0
+2018-02-26 23:50:48.335 DEBUG [main]cn.study.dao.functiondao.ca.debug:145 -<==      Total: 2

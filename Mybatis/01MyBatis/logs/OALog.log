@@ -1,0 +1,92 @@
+2018-03-01 08:55:41.532 DEBUG [main]cn.study.dao.functiondao.getObject:62 -Cache Hit Ratio [cn.study.dao.functiondao]: 0.0
+2018-03-01 08:55:41.882 DEBUG [main]cn.study.dao.functiondao.one.debug:145 -==>  Preparing: SELECT dept.`deptid`,dept.`deptname`,emp.`empname` FROM dept,emp WHERE dept.`deptid`=emp.`deptid` AND dept.`deptid`=? 
+2018-03-01 08:55:41.903 DEBUG [main]cn.study.dao.functiondao.one.debug:145 -==> Parameters: 1(Integer)
+2018-03-01 08:55:41.917 DEBUG [main]cn.study.dao.functiondao.one.debug:145 -<==      Total: 2
+2018-03-01 14:00:01.292 DEBUG [main]cn.study.dao.functiondao.getObject:62 -Cache Hit Ratio [cn.study.dao.functiondao]: 0.0
+2018-03-01 14:00:01.572 DEBUG [main]cn.study.dao.functiondao.two.debug:145 -==>  Preparing: SELECT * FROM dept where deptid=? 
+2018-03-01 14:00:01.598 DEBUG [main]cn.study.dao.functiondao.two.debug:145 -==> Parameters: 1(Integer)
+2018-03-01 14:00:01.750 DEBUG [main]cn.study.dao.functiondao.two.debug:145 -<==      Total: 1
+2018-03-01 14:00:01.751 DEBUG [main]cn.study.dao.functiondao.getObject:62 -Cache Hit Ratio [cn.study.dao.functiondao]: 0.0
+2018-03-01 14:00:01.783 DEBUG [main]cn.study.dao.functiondao.two.debug:145 -==>  Preparing: SELECT * FROM dept where deptid=? 
+2018-03-01 14:00:01.783 DEBUG [main]cn.study.dao.functiondao.two.debug:145 -==> Parameters: 1(Integer)
+2018-03-01 14:00:01.785 DEBUG [main]cn.study.dao.functiondao.two.debug:145 -<==      Total: 1
+2018-03-01 14:01:57.810 DEBUG [main]cn.study.dao.functiondao.getObject:62 -Cache Hit Ratio [cn.study.dao.functiondao]: 0.0
+2018-03-01 14:01:58.186 DEBUG [main]cn.study.dao.functiondao.two.debug:145 -==>  Preparing: SELECT * FROM dept where deptid=? 
+2018-03-01 14:01:58.213 DEBUG [main]cn.study.dao.functiondao.two.debug:145 -==> Parameters: 1(Integer)
+2018-03-01 14:01:58.288 DEBUG [main]cn.study.dao.functiondao.two.debug:145 -<==      Total: 1
+2018-03-01 14:01:58.289 DEBUG [main]cn.study.dao.functiondao.getObject:62 -Cache Hit Ratio [cn.study.dao.functiondao]: 0.0
+2018-03-01 14:01:58.300 DEBUG [main]cn.study.dao.functiondao.two.debug:145 -==>  Preparing: SELECT * FROM dept where deptid=? 
+2018-03-01 14:01:58.301 DEBUG [main]cn.study.dao.functiondao.two.debug:145 -==> Parameters: 1(Integer)
+2018-03-01 14:01:58.303 DEBUG [main]cn.study.dao.functiondao.two.debug:145 -<==      Total: 1
+2018-03-01 14:02:30.308 DEBUG [main]cn.study.dao.functiondao.getObject:62 -Cache Hit Ratio [cn.study.dao.functiondao]: 0.0
+2018-03-01 14:02:30.692 DEBUG [main]cn.study.dao.functiondao.two.debug:145 -==>  Preparing: SELECT * FROM dept where deptid=? 
+2018-03-01 14:02:30.752 DEBUG [main]cn.study.dao.functiondao.two.debug:145 -==> Parameters: 1(Integer)
+2018-03-01 14:02:30.820 DEBUG [main]cn.study.dao.functiondao.two.debug:145 -<==      Total: 1
+2018-03-01 14:02:30.821 DEBUG [main]cn.study.dao.functiondao.getObject:62 -Cache Hit Ratio [cn.study.dao.functiondao]: 0.0
+2018-03-01 14:02:30.832 DEBUG [main]cn.study.dao.functiondao.two.debug:145 -==>  Preparing: SELECT * FROM dept where deptid=? 
+2018-03-01 14:02:30.833 DEBUG [main]cn.study.dao.functiondao.two.debug:145 -==> Parameters: 1(Integer)
+2018-03-01 14:02:30.835 DEBUG [main]cn.study.dao.functiondao.two.debug:145 -<==      Total: 1
+2018-03-01 14:05:24.759 DEBUG [main]cn.study.dao.functiondao.getObject:62 -Cache Hit Ratio [cn.study.dao.functiondao]: 0.0
+2018-03-01 14:05:24.970 DEBUG [main]cn.study.dao.functiondao.two.debug:145 -==>  Preparing: SELECT * FROM dept where deptid=? 
+2018-03-01 14:05:25.003 DEBUG [main]cn.study.dao.functiondao.two.debug:145 -==> Parameters: 1(Integer)
+2018-03-01 14:05:25.069 DEBUG [main]cn.study.dao.functiondao.two.debug:145 -<==      Total: 1
+2018-03-01 14:05:25.070 DEBUG [main]cn.study.dao.functiondao.getObject:62 -Cache Hit Ratio [cn.study.dao.functiondao]: 0.0
+2018-03-01 14:05:25.080 DEBUG [main]cn.study.dao.functiondao.two.debug:145 -==>  Preparing: SELECT * FROM dept where deptid=? 
+2018-03-01 14:05:25.081 DEBUG [main]cn.study.dao.functiondao.two.debug:145 -==> Parameters: 1(Integer)
+2018-03-01 14:05:25.082 DEBUG [main]cn.study.dao.functiondao.two.debug:145 -<==      Total: 1
+2018-03-01 14:44:51.139 DEBUG [main]cn.study.dao.functiondao.getObject:62 -Cache Hit Ratio [cn.study.dao.functiondao]: 0.0
+2018-03-01 14:44:51.373 DEBUG [main]cn.study.dao.functiondao.two.debug:145 -==>  Preparing: SELECT * FROM dept where deptid=? 
+2018-03-01 14:44:51.410 DEBUG [main]cn.study.dao.functiondao.two.debug:145 -==> Parameters: 1(Integer)
+2018-03-01 14:44:51.495 DEBUG [main]cn.study.dao.functiondao.two.debug:145 -<==      Total: 1
+2018-03-01 14:44:51.496 DEBUG [main]cn.study.dao.functiondao.getObject:62 -Cache Hit Ratio [cn.study.dao.functiondao]: 0.0
+2018-03-01 14:44:51.510 DEBUG [main]cn.study.dao.functiondao.two.debug:145 -==>  Preparing: SELECT * FROM dept where deptid=? 
+2018-03-01 14:44:51.510 DEBUG [main]cn.study.dao.functiondao.two.debug:145 -==> Parameters: 1(Integer)
+2018-03-01 14:44:51.514 DEBUG [main]cn.study.dao.functiondao.two.debug:145 -<==      Total: 1
+2018-03-01 14:47:44.057 DEBUG [main]cn.study.dao.functiondao.getObject:62 -Cache Hit Ratio [cn.study.dao.functiondao]: 0.0
+2018-03-01 14:47:44.280 DEBUG [main]cn.study.dao.functiondao.one.debug:145 -==>  Preparing: SELECT dept.`deptid`,dept.`deptname`,emp.`empname` FROM dept,emp WHERE dept.`deptid`=emp.`deptid` AND dept.`deptid`=? 
+2018-03-01 14:47:44.323 DEBUG [main]cn.study.dao.functiondao.one.debug:145 -==> Parameters: 1(Integer)
+2018-03-01 14:47:44.443 DEBUG [main]cn.study.dao.functiondao.one.debug:145 -<==      Total: 2
+2018-03-01 14:47:44.444 DEBUG [main]cn.study.dao.functiondao.getObject:62 -Cache Hit Ratio [cn.study.dao.functiondao]: 0.0
+2018-03-01 14:47:44.455 DEBUG [main]cn.study.dao.functiondao.one.debug:145 -==>  Preparing: SELECT dept.`deptid`,dept.`deptname`,emp.`empname` FROM dept,emp WHERE dept.`deptid`=emp.`deptid` AND dept.`deptid`=? 
+2018-03-01 14:47:44.456 DEBUG [main]cn.study.dao.functiondao.one.debug:145 -==> Parameters: 1(Integer)
+2018-03-01 14:47:44.458 DEBUG [main]cn.study.dao.functiondao.one.debug:145 -<==      Total: 2
+2018-03-01 14:47:57.369 DEBUG [main]cn.study.dao.functiondao.getObject:62 -Cache Hit Ratio [cn.study.dao.functiondao]: 0.0
+2018-03-01 14:47:57.567 DEBUG [main]cn.study.dao.functiondao.two.debug:145 -==>  Preparing: SELECT * FROM dept where deptid=? 
+2018-03-01 14:47:57.591 DEBUG [main]cn.study.dao.functiondao.two.debug:145 -==> Parameters: 1(Integer)
+2018-03-01 14:47:57.659 DEBUG [main]cn.study.dao.functiondao.two.debug:145 -<==      Total: 1
+2018-03-01 14:47:57.660 DEBUG [main]cn.study.dao.functiondao.getObject:62 -Cache Hit Ratio [cn.study.dao.functiondao]: 0.0
+2018-03-01 14:47:57.671 DEBUG [main]cn.study.dao.functiondao.two.debug:145 -==>  Preparing: SELECT * FROM dept where deptid=? 
+2018-03-01 14:47:57.671 DEBUG [main]cn.study.dao.functiondao.two.debug:145 -==> Parameters: 1(Integer)
+2018-03-01 14:47:57.673 DEBUG [main]cn.study.dao.functiondao.two.debug:145 -<==      Total: 1
+2018-03-01 14:48:57.457 DEBUG [main]cn.study.dao.functiondao.getObject:62 -Cache Hit Ratio [cn.study.dao.functiondao]: 0.0
+2018-03-01 14:48:57.824 DEBUG [main]cn.study.dao.functiondao.two.debug:145 -==>  Preparing: SELECT * FROM dept where deptid=? 
+2018-03-01 14:48:57.842 DEBUG [main]cn.study.dao.functiondao.two.debug:145 -==> Parameters: 1(Integer)
+2018-03-01 14:48:57.960 DEBUG [main]cn.study.dao.functiondao.two.debug:145 -<==      Total: 1
+2018-03-01 14:48:57.961 DEBUG [main]cn.study.dao.functiondao.getObject:62 -Cache Hit Ratio [cn.study.dao.functiondao]: 0.0
+2018-03-01 14:48:57.975 DEBUG [main]cn.study.dao.functiondao.two.debug:145 -==>  Preparing: SELECT * FROM dept where deptid=? 
+2018-03-01 14:48:57.976 DEBUG [main]cn.study.dao.functiondao.two.debug:145 -==> Parameters: 1(Integer)
+2018-03-01 14:48:57.978 DEBUG [main]cn.study.dao.functiondao.two.debug:145 -<==      Total: 1
+2018-03-01 14:49:42.992 DEBUG [main]cn.study.dao.functiondao.getObject:62 -Cache Hit Ratio [cn.study.dao.functiondao]: 0.0
+2018-03-01 14:49:43.308 DEBUG [main]cn.study.dao.functiondao.two.debug:145 -==>  Preparing: SELECT * FROM dept where deptid=? 
+2018-03-01 14:49:43.355 DEBUG [main]cn.study.dao.functiondao.two.debug:145 -==> Parameters: 1(Integer)
+2018-03-01 14:49:43.441 DEBUG [main]cn.study.dao.functiondao.two.debug:145 -<==      Total: 1
+2018-03-01 14:49:43.442 DEBUG [main]cn.study.dao.functiondao.getObject:62 -Cache Hit Ratio [cn.study.dao.functiondao]: 0.0
+2018-03-01 14:49:43.452 DEBUG [main]cn.study.dao.functiondao.two.debug:145 -==>  Preparing: SELECT * FROM dept where deptid=? 
+2018-03-01 14:49:43.452 DEBUG [main]cn.study.dao.functiondao.two.debug:145 -==> Parameters: 1(Integer)
+2018-03-01 14:49:43.455 DEBUG [main]cn.study.dao.functiondao.two.debug:145 -<==      Total: 1
+2018-03-01 14:52:39.207 DEBUG [main]cn.study.dao.functiondao.getObject:62 -Cache Hit Ratio [cn.study.dao.functiondao]: 0.0
+2018-03-01 14:52:39.532 DEBUG [main]cn.study.dao.functiondao.two.debug:145 -==>  Preparing: SELECT * FROM dept where deptid=? 
+2018-03-01 14:52:39.575 DEBUG [main]cn.study.dao.functiondao.two.debug:145 -==> Parameters: 1(Integer)
+2018-03-01 14:52:39.680 DEBUG [main]cn.study.dao.functiondao.two.debug:145 -<==      Total: 1
+2018-03-01 14:52:39.681 DEBUG [main]cn.study.dao.functiondao.getObject:62 -Cache Hit Ratio [cn.study.dao.functiondao]: 0.0
+2018-03-01 14:52:39.691 DEBUG [main]cn.study.dao.functiondao.two.debug:145 -==>  Preparing: SELECT * FROM dept where deptid=? 
+2018-03-01 14:52:39.691 DEBUG [main]cn.study.dao.functiondao.two.debug:145 -==> Parameters: 1(Integer)
+2018-03-01 14:52:39.693 DEBUG [main]cn.study.dao.functiondao.two.debug:145 -<==      Total: 1
+2018-03-01 14:54:39.153 DEBUG [main]cn.study.dao.functiondao.getObject:62 -Cache Hit Ratio [cn.study.dao.functiondao]: 0.0
+2018-03-01 14:54:39.574 DEBUG [main]cn.study.dao.functiondao.two.debug:145 -==>  Preparing: SELECT * FROM dept where deptid=? 
+2018-03-01 14:54:39.636 DEBUG [main]cn.study.dao.functiondao.two.debug:145 -==> Parameters: 1(Integer)
+2018-03-01 14:54:39.734 DEBUG [main]cn.study.dao.functiondao.two.debug:145 -<==      Total: 1
+2018-03-01 14:54:39.735 DEBUG [main]cn.study.dao.functiondao.getObject:62 -Cache Hit Ratio [cn.study.dao.functiondao]: 0.0
+2018-03-01 14:54:39.747 DEBUG [main]cn.study.dao.functiondao.two.debug:145 -==>  Preparing: SELECT * FROM dept where deptid=? 
+2018-03-01 14:54:39.747 DEBUG [main]cn.study.dao.functiondao.two.debug:145 -==> Parameters: 1(Integer)
+2018-03-01 14:54:39.751 DEBUG [main]cn.study.dao.functiondao.two.debug:145 -<==      Total: 1

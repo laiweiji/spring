@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.study.dao.IBookdao">
+
+<sql id="ink">
+
+    bookName,bookAuthor,bookPrice
+
+
+</sql>
+
+    <resultMap id="bookMappper" type="book">
+
+        <id column="bookId" property="bookId"></id>
+
+    </resultMap>
+
+    <select id="books" resultType="book">
+
+        select <include refid="ink"></include> from book WHERE bookName LIKE concat ('%',#{VALUES },'%')
+
+    </select>
+
+
+    <select id="selectone" resultType="book">
+
+        select  bookName,bookAuthor FROM  book WHERE  bookName LIKE '%' #{bookName} '%' and bookPrice>#{bookPrice}
+
+    </select>
+
+    <select id="findnew" resultType="book">
+
+
+        select * from book
+
+        <where>
+
+            <if test="bookName!=null">
+
+                and bookName LIKE '%' #{bookName} '%'
+
+            </if>
+            <if test="bookAthor!=null">
+
+
+                and bookPrice>#{bookPrice}
+
+            </if>
+
+        </where>
+
+
+    </select>
+
+
+    <select id="selecttwo" resultType="book">
+
+  select  bookName,bookAuthor FROM  book WHERE  bookName LIKE '%' #{0} '%' and bookPrice>#{1}
+
+    </select>
+
+
+    <select id="one" resultType="book">
+
+       select   *  from    book where  bookId=#{bookId}
+
+    </select>
+
+    <insert id="inser">
+
+       INSERT INTO book (bookName,bookAuthor,bookPrice) VALUES (#{bookName},#{bookAthor},#{bookPrice})
+
+       <selectKey resultType="int" keyProperty="bookId">
+
+           SELECT @@IDENTITY
+
+
+       </selectKey>
+
+    </insert>
+
+
+    <select id="findt" resultType="book">
+
+        select * from book
+
+        <where>
+            bookId  IN
+            <foreach collection="list" open="(" close=")" separator="," item="book">
+
+                #{book}
+            </foreach>
+
+        </where>
+
+    </select>
+
+    <select id="findth" resultType="book">
+
+        select * from book
+
+        <where>
+
+            bookId in
+            <foreach collection="list" open="(" close=")" separator="," item="book">
+
+                #{book.bookId}
+
+            </foreach>
+
+        </where>
+
+
+    </select>
+
+    <select id="findo" resultType="book">
+
+        select * from book
+
+        <where>
+
+            bookId IN
+            <foreach collection="array" open="(" close=")" separator="," item="myid">
+                #{myid}
+            </foreach>
+
+        </where>
+
+
+    </select>
+
+
+    <delete id="del">
+
+        DELETE  FROM  book WHERE bookId=#{bookId}
+
+    </delete>
+
+    <update id="up">
+
+        UPDATE book set bookPrice=#{1} WHERE   bookId=#{0}
+
+    </update>
+
+
+</mapper>

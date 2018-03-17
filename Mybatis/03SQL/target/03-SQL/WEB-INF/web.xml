@@ -1,0 +1,46 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+    <cn.study.servlet>
+        
+        <cn.study.servlet-name>Sloginservlet</cn.study.servlet-name>
+        <cn.study.servlet-class>cn.study.cn.study.servlet.Sloginservlet</cn.study.servlet-class>
+    </cn.study.servlet>
+    <cn.study.servlet>
+        <cn.study.servlet-name>answerServlet</cn.study.servlet-name>
+        <cn.study.servlet-class>cn.study.cn.study.servlet.answerServlet</cn.study.servlet-class>
+    </cn.study.servlet>
+    <cn.study.servlet>
+        <cn.study.servlet-name>EnterServlet</cn.study.servlet-name>
+        <cn.study.servlet-class>cn.study.cn.study.servlet.EnterServlet</cn.study.servlet-class>
+    </cn.study.servlet>
+    <cn.study.servlet>
+        <cn.study.servlet-name>INServlet</cn.study.servlet-name>
+        <cn.study.servlet-class>cn.study.cn.study.servlet.INServlet</cn.study.servlet-class>
+    </cn.study.servlet>
+
+
+    <cn.study.servlet-mapping>
+        <cn.study.servlet-name>Sloginservlet</cn.study.servlet-name>
+        <url-pattern>/cn.study.servlet/Sloginservlet</url-pattern>
+    </cn.study.servlet-mapping>
+
+    <cn.study.servlet-mapping>
+        <cn.study.servlet-name>answerServlet</cn.study.servlet-name>
+        <url-pattern>/cn.study.servlet/answerServlet</url-pattern>
+    </cn.study.servlet-mapping>
+    
+<cn.study.servlet-mapping>
+    <cn.study.servlet-name>EnterServlet</cn.study.servlet-name>
+    <url-pattern>/cn.study.servlet/EnterServlet</url-pattern>
+</cn.study.servlet-mapping>
+    
+    <cn.study.servlet-mapping>
+        <cn.study.servlet-name>INServlet</cn.study.servlet-name>
+        <url-pattern>/cn.study.servlet/INServlet</url-pattern>
+    </cn.study.servlet-mapping>
+    
+</web-app>

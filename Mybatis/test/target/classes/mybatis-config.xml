@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+        <!DOCTYPE configuration
+                PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+                "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <settings>
+    <!--<setting name="autoMappingBehavior" value="FULL"/>-->
+
+        <setting name="lazyLoadingEnabled"  value="true"></setting>
+        <setting name="aggressiveLazyLoading" value="false"></setting>
+
+        <!--直接加载  false true-->
+
+        <!--侵入式加载 true true-->
+
+        <!-- 深度延迟加载  true false -->
+        <setting name="cacheEnabled" value="true"></setting>
+    </settings>
+
+    <typeAliases>
+
+        <package name="cn.entity"></package>
+
+    </typeAliases>
+
+
+<environments default="development">
+    <environment id="development">
+        <transactionManager type="JDBC"/>
+        <dataSource type="POOLED">
+
+            <property name="driver" value="com.mysql.jdbc.Driver"/>
+            <property name="url" value="jdbc:mysql:///newss2228"/>
+            <property name="username" value="root"/>
+            <property name="password" value=""/>
+
+        </dataSource>
+    </environment>
+</environments>
+
+<mappers>
+
+    <mapper resource="cn/dao/one.xml"/>
+
+</mappers>
+
+</configuration>

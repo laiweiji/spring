@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    <!--<context:component-scan base-package="cn.autowired.entity"></context:component-scan>-->
+
+    <bean id="Cdd" class="cn.autowired.entity.Cdd"></bean>
+
+    <bean id="Jack" class="cn.autowired.entity.Jack"></bean>
+
+    <bean id="Befo" class="cn.autowired.entity.Befo"></bean>
+
+    <bean id="Expr" class="cn.autowired.entity.Expr"></bean>
+
+    <bean id="Dg" class="org.springframework.aop.support.NameMatchMethodPointcutAdvisor">
+        <property name="advice" ref="Befo"></property>
+        <property name="mappedNames" value="some"></property>
+     </bean>
+
+<bean id="Kl" class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
+    <property name="advice" ref="Befo"></property>
+    <property name="patterns" value=".*so.*"></property>
+
+</bean>
+
+    <bean id="Proxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+        <property name="target" ref="Cdd"></property>
+        <property name="interceptorNames" value="Kl"></property>
+    </bean>
+
+
+
+
+
+    <bean id="as" class="org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator">
+
+        <property name="beanNames" value="se"></property>
+
+        <property name="interceptorNames" value="aa"></property>
+    </bean>
+
+<bean class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator"></bean>
+
+</beans>

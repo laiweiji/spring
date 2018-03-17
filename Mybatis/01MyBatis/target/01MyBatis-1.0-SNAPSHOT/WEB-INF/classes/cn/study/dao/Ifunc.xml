@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.study.dao.functiondao">
+
+    <cache eviction="FIFO" flushInterval="60000" size="1024"  readOnly="true"></cache>
+
+    <!--<cache type="org.mybatis.caches.ehcache.EhcacheCache"></cache>-->
+
+    <resultMap id="oneMapper" type="dept">
+
+        <id column="deptid" property="deptid"></id>
+
+        <result column="deptname" property="deptname"></result>
+
+        <collection property="emps" ofType="emp">
+
+            <result column="empname" property="empname"></result>
+
+        </collection>
+    </resultMap>
+
+    <resultMap id="twoMapper" type="dept">
+
+        <id column="deptid" property="deptid"></id>
+
+        <result column="deptname" property="deptname"></result>
+
+        <collection property="emps" ofType="emp" column="deptid" select="set">  </collection>
+    </resultMap>
+
+    <resultMap id="threeMapper" type="emp">
+
+        <id column="empid" property="empid"></id>
+
+        <result column="empname" property="empname"></result>
+
+        <association property="dd" javaType="dept">
+
+            <id property="deptid" column="deptid"></id>
+
+            <result property="deptname" column="deptname"></result>
+
+        </association>
+
+
+    </resultMap>
+
+    <resultMap id="camapper" type="category">
+
+        <id property="cid" column="cid"></id>
+        <result property="cname" column="cname"></result>
+
+        <collection property="cate" ofType="category" select="ca" column="cid"></collection>
+
+    </resultMap>
+
+    <!--<resultMap id="fourMapperr" type="emp">-->
+
+        <!--<id column="empid" property="empid"></id>-->
+
+        <!--<result column="empname" property="empname"></result>-->
+
+        <!--<association property="dd" javaType="dept" select="nii" column="deptid">-->
+
+        <!--</association>-->
+
+
+    <!--</resultMap>-->
+
+    <resultMap id="teaMapper" type="teather">
+
+        <id column="tid" property="tid"></id>
+
+        <result column="tname" property="tname"></result>
+
+        <collection property="stus" ofType="student" >
+
+            <id column="sid" property="sid"></id>
+
+            <result column="sname"  property="sname"></result>
+
+
+        </collection>
+
+    </resultMap>
+
+    <select id="nii" resultType="dept">
+
+        select * from dept where deptid=#{deptid}
+
+    </select>
+
+    <select id="set" resultType="emp">
+
+        select * from emp where deptid=#{deptid}
+
+    </select>
+
+    <select id="login" resultType="user">
+        
+        select id,userCode,userName from smbms_user WHERE userCode=#{0} and userPassword=#{1} ;
+        
+    </select>
+
+    <select id="logino" resultType="user">
+
+        select id from smbms_user where  userPassword=#{0} ;
+
+    </select>
+
+    <update id="up">
+
+        UPDATE  smbms_user  set   userPassword=#{1}  where  id=#{0}
+
+    </update>
+
+    <select id="one" resultMap="oneMapper" >
+
+        SELECT dept.`deptid`,dept.`deptname`,emp.`empname` FROM dept,emp WHERE dept.`deptid`=emp.`deptid` AND dept.`deptid`=#{deptid}
+
+    </select>
+
+
+    <select id="two" resultMap="twoMapper" >
+
+        SELECT * FROM dept where deptid=#{deptid}
+
+    </select>
+
+    <select id="three" resultMap="threeMapper">
+
+            SELECT * FROM dept,emp WHERE dept.`deptid`=emp.`deptid` AND emp.`empid`=#{empid}
+
+    </select>
+
+    <!--<select id="four" resultMap="fourMapper">-->
+
+        <!--select * from emp where empid=#{empid}-->
+
+    <!--</select>-->
+
+<select id="tea" resultMap="teaMapper">
+
+    SELECT * FROM Student AS a,teacher AS b,`teacher_student` AS c WHERE c.sid=a.sid AND c.tid=b.tid AND b.tid=#{tid}
+
+</select>
+
+    <select id="ca" resultMap="camapper">
+
+
+   select * from category where pid=#{pid}
+
+    </select>
+
+    <select id="sep" resultType="user">
+
+        SELECT * FROM `smbms_user`
+
+    </select>
+
+    <insert id="inser">
+
+        INSERT INTO `dept` (deptname)VALUE  (#{0})
+
+    </insert>
+
+</mapper>

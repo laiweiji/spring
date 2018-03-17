@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+    <!--<context:component-scan base-package="cn.autowired.dao"></context:component-scan>-->
+
+
+
+    <!--<bean id="Bofore" class="cn.autowired.dao.Methds"></bean>-->
+    <!--<bean id="service" class="cn.autowired.dao.impl.Seppp"></bean>-->
+ <!--<bean id="pp" class="cn.autowired.dao.Lpg"></bean>-->
+
+
+    <!--<bean class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator"></bean>-->
+
+    <!--<bean id="befor" class="cn.autowired.entity.Zq"></bean>-->
+
+
+    <!--<bean id="text" class="cn.autowired.entity.text"></bean>-->
+
+
+    <!--<aop:config>-->
+        <!--<aop:pointcut id="mypoint" expression="execution(* *..autowired.entity.text.look(..))"></aop:pointcut>-->
+
+        <!--<aop:aspect ref="befor">-->
+
+            <!--<aop:before method="befor" pointcut-ref="mypoint"></aop:before>-->
+            <!--<aop:after-returning method="afterreturning" pointcut-ref="mypoint"></aop:after-returning>-->
+            <!--<aop:after method="after" pointcut-ref="mypoint"></aop:after>-->
+            <!--<aop:around method="around" pointcut-ref="mypoint"></aop:around>-->
+            <!--<aop:after-throwing method="throwing" pointcut-ref="mypoint"></aop:after-throwing>-->
+        <!--</aop:aspect>-->
+
+    <!--</aop:config>-->
+
+    <!--<aop:aspectj-autoproxy></aop:aspectj-autoproxy>-->
+
+    <!--<bean id="datasource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">-->
+
+        <!--<property name="driverClassName" value="com.mysql.jdbc.Driver"></property>-->
+
+        <!--<property name="url" value="jdbc:mysql:///newss2228"></property>-->
+
+        <!--<property name="username" value="root"></property>-->
+        <!--<property name="password" value=""></property>-->
+    <!--</bean>-->
+
+    <!--<bean id="datasource" class="org.apache.commons.dbcp.BasicDataSource">-->
+
+        <!--<property name="driverClassName" value="com.mysql.jdbc.Driver"></property>-->
+
+        <!--<property name="url" value="jdbc:mysql:///newss2228"></property>-->
+
+        <!--<property name="username" value="root"></property>-->
+        <!--<property name="password" value=""></property>-->
+    <!--</bean>-->
+
+    <!--<bean id="datasource" class="com.mchange.v2.c3p0.ComboPooledDataSource">-->
+
+        <!--<property name="driverClass" value="com.mysql.jdbc.Driver"></property>-->
+
+        <!--<property name="jdbcUrl" value="jdbc:mysql:///newss2228"></property>-->
+
+        <!--<property name="user" value="root"></property>-->
+        <!--<property name="password" value=""></property>-->
+    <!--</bean>-->
+
+    <bean id="datasource" class="com.alibaba.druid.pool.DruidDataSource">
+
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
+
+        <property name="Url" value="jdbc:mysql:///newss2228"></property>
+
+        <property name="username" value="root"></property>
+        <property name="password" value=""></property>
+    </bean>
+
+
+
+    <bean id="da" class="org.springframework.jdbc.core.JdbcTemplate">
+        <property name="dataSource" ref="datasource"></property>
+    </bean>
+
+    <bean id="dao" class="spring.dao.SelectBookimpl">
+        <property name="jdbcTemplate" ref="da"></property>
+    </bean>
+
+    <bean id="service" class="spring.service.impl.Bookserviceimpl">
+
+        <property name="se" ref="dao"></property>
+
+    </bean>
+
+
+</beans>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="services" class="cn.study.dao.happservice">
+
+        <property name="name" value="啦啦啦"></property>
+ 
+        <property name="age" value="12"></property>
+    </bean>
+
+    <bean id="ink" class="cn.study.ink.Colorink"></bean>
+
+    <bean id="Paper" class="cn.study.paper.A5Paper"></bean>
+
+    <bean id="Pinter" class="cn.study.printer.Pinter">
+
+        <property name="in" ref="ink"></property>
+
+        <property name="paper" ref="Paper"></property>
+     </bean>
+
+</beans>
